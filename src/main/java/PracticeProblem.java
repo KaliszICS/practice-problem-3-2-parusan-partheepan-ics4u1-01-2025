@@ -1,4 +1,4 @@
-public class PracticeProblem {
+public class PracticeProblem { 
 
     public static void main(String args[]) {
         // Test the function
