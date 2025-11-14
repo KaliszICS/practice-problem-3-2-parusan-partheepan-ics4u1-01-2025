@@ -16,12 +16,7 @@ public class PracticeProblem {
             return -1;
         }
         
-        // Base case: 3 rings is the minimum (7 moves)
-        if (num == 3) {
-            return 7;
-        }
-        
-        // Recursive case: moves(n) = 2 × moves(n-1) + 1
-        return 2 * towerOfHanoi(num - 1) + 1;
+        // Use the direct mathematical formula to avoid stack overflow
+        return (1 << num) - 1;  // This is 2^n - 1 using bit shifting
     }
 }
